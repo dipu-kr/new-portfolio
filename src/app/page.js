@@ -1,10 +1,24 @@
+"use client";
+import { useEffect } from "react";
 import WrapperContainer from "./WrapperContainer";
 import Intro from "./components/intro/Intro";
+import Skills from "./components/skills/Skills";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800, // Animation duration in milliseconds
+      offset: 40, // Offset (in pixels) from the element's position when triggering animation
+      easing: "ease-in-out", // Animation easing (default: 'ease')
+      // Add more AOS options here
+    });
+  }, []);
   return (
     <div className="w-full overflow-x-hidden">
       <Intro />
+      <Skills />
     </div>
   );
 }

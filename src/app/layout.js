@@ -1,4 +1,5 @@
 import "./globals.css";
+import Head from "next/head";
 import { Roboto } from "next/font/google";
 
 const roboto = Roboto({

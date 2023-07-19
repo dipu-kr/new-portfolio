@@ -9,8 +9,8 @@ import AOS from "aos";
 export default function Home() {
   useEffect(() => {
     AOS.init({
-      duration: 800, // Animation duration in milliseconds
-      offset: 40, // Offset (in pixels) from the element's position when triggering animation
+      duration: 700, // Animation duration in milliseconds
+      offset: 80, // Offset (in pixels) from the element's position when triggering animation
       easing: "ease-in-out", // Animation easing (default: 'ease')
       // Add more AOS options here
     });

@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Skills.css";
+import WrapperContainer from "@/app/WrapperContainer";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3, DiGitMerge, DiResponsive } from "react-icons/di";
 import { BsBootstrapFill } from "react-icons/bs";
@@ -7,6 +8,7 @@ import { TbBrandJavascript, TbBrandNextjs } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
 import { SiRedux, SiClockify, SiTailwindcss } from "react-icons/si";
 import { SlRocket } from "react-icons/sl";
+import AOS from "aos";
 
 const skill = [
   {
@@ -57,44 +59,55 @@ const skill = [
 ];
 
 const Skills = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 700, // Animation duration in milliseconds
+      offset: 200, // Offset (in pixels) from the element's position when triggering animation
+      easing: "ease", // Animation easing (default: 'ease')
+      // Add more AOS options here
+    });
+  }, []);
   return (
     <section className="skills_main_container">
-      <div className="w-full text-center pt-6">
-        <h1 className="text-white text-3xl" data-aos="fade-up">
-          SKILLS
-        </h1>
-      </div>
-      <div className="w-full flex">
-        <div className="w-1/2 h-[400px] text-white flex items-center justify-center flex-wrap">
-          <div
-            className="w-2/3 h-auto flex flex-wrap items-center justify-center gap-8"
-            data-aos="fade-up"
-          >
-            {skill.map((val, index) => (
-              <span
-                className="w-1/4 h-10 flex items-center justify-center text-5xl skill_icon"
-                key={index}
-                style={{ color: val.clr }}
-              >
-                {val.icon}
-              </span>
-            ))}
-          </div>
+      <WrapperContainer>
+        <div className="w-full text-center pt-6">
+          <h1 className="text-white text-3xl" data-aos="fade-up">
+            SKILLS
+          </h1>
         </div>
-        <div className="w-1/2 h-[400px] text-white flex items-center justify-center">
-          <div className="w-3/4" data-aos="fade-up">
-            <p className="skill_para">
-              A frontend developer with less than one year of experience. I'm
-              proficient in HTML , CSS , JAVASCRIPT, and have experince working
-              with popular frontend framework like React js and Next js. I have
-              excellent problem solving abilities and keen eye for detail.
-            </p>
-            <div className="cv_download_btn_div">
-              <button className="cv_download_btn">Download CV</button>
+        <div className="w-full flex">
+          <div className="w-1/2 h-[400px] text-white flex items-center justify-center flex-wrap">
+            <div
+              className="w-full h-auto flex flex-wrap items-center gap-8"
+              data-aos="fade-up"
+            >
+              {skill.map((val, index) => (
+                <span
+                  className="w-1/4 h-10 flex items-center text-5xl skill_icon"
+                  key={index}
+                  style={{ color: val.clr }}
+                >
+                  {val.icon}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div className="w-1/2 h-[400px] text-white flex items-center justify-center">
+            <div className="w-full" data-aos="fade-up">
+              <p className="skill_para">
+                A frontend developer with less than one year of experience. I'm
+                proficient in HTML , CSS , JAVASCRIPT, and have experince
+                working with popular frontend framework like React js and Next
+                js. I have excellent problem solving abilities and keen eye for
+                detail.
+              </p>
+              <div className="cv_download_btn_div">
+                <button className="cv_download_btn">Download CV</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </WrapperContainer>
     </section>
   );
 };

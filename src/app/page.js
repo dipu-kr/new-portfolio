@@ -1,8 +1,8 @@
 "use client";
 import { useEffect } from "react";
-import WrapperContainer from "./WrapperContainer";
 import Intro from "./components/intro/Intro";
 import Skills from "./components/skills/Skills";
+import Project from "./components/project/Project";
 import "aos/dist/aos.css";
 import AOS from "aos";
 
@@ -19,6 +19,7 @@ export default function Home() {
     <div className="w-full overflow-x-hidden">
       <Intro />
       <Skills />
+      <Project />
     </div>
   );
 }

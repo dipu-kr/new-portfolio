@@ -27,6 +27,7 @@ const Card = ({ dataList }) => {
               height={170}
               alt="project-image"
               className="h-[170px] w-[100%] bg-contain bg-center"
+              layout="responsive"
             />
           </div>
           <div className="h-[80px] w-full flex items-center justify-center">

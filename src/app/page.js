@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Intro from "./components/intro/Intro";
 import Skills from "./components/skills/Skills";
 import Project from "./components/project/Project";
+import ContactUs from "./components/contactus/ContactUs";
 import "aos/dist/aos.css";
 import AOS from "aos";
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Intro />
       <Skills />
       <Project />
+      <ContactUs />
     </div>
   );
 }

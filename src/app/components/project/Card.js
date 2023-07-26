@@ -23,11 +23,11 @@ const Card = ({ dataList }) => {
           <div className="w-full h-[170px]">
             <Image
               src={data.image}
-              width="100%"
-              height={170}
+              // width="100%"
+              // height={170}
+              sizes="100vh"
               alt="project-image"
-              className="h-[170px] w-[100%] bg-contain bg-center"
-              layout="responsive"
+              style={{ width: "100%", height: "auto" }}
             />
           </div>
           <div className="h-[80px] w-full flex items-center justify-center">

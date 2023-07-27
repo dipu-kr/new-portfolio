@@ -9,8 +9,8 @@ import AOS from "aos";
 const Project = () => {
   useEffect(() => {
     AOS.init({
-      duration: 600,
-      offset: 150,
+      duration: 400,
+      offset: 100,
       easing: "ease",
       // Add more AOS options here
     });

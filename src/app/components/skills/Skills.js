@@ -8,7 +8,7 @@ const Skills = () => {
   useEffect(() => {
     AOS.init({
       duration: 500, // Animation duration in milliseconds
-      offset: 120, // Offset (in pixels) from the element's position when triggering animation
+      offset: 100, // Offset (in pixels) from the element's position when triggering animation
       easing: "ease", // Animation easing (default: 'ease')
       // Add more AOS options here
     });

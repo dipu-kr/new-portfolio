@@ -18,16 +18,15 @@ const Card = ({ dataList }) => {
         <div
           className="w-full h-[250px] flex flex-col gap-2 rounded-lg bg-white shadow-lg p-2"
           key={index}
-          data-aos="fade-down"
+          data-aos="fade-up"
         >
           <div className="w-full h-[170px]">
             <Image
               src={data.image}
               // width="100%"
               // height={170}
-              sizes="100vh"
               alt="project-image"
-              style={{ width: "100%", height: "auto" }}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </div>
           <div className="h-[80px] w-full flex items-center justify-center">

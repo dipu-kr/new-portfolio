@@ -1,20 +1,34 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./ContactUs.css";
+import FormContent from "./FormContent";
 import WrapperContainer from "@/app/WrapperContainer";
 import { BiPhoneCall } from "react-icons/bi";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { MdOutlineEmail } from "react-icons/md";
+import AOS from "aos";
 
 const ContactUs = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 400,
+      offset: 100,
+      easing: "ease",
+      // Add more AOS options here
+    });
+  }, []);
+
   return (
     <div className="contactus_container mb-8">
       <WrapperContainer>
-        <div className="w-full text-center pt-6">
+        <div className="w-full text-center pt-6" data-aos="fade-up">
           <h1 className="text-white text-3xl">Any Question? Feel Free</h1>
           <h1 className="text-white text-3xl">to Contact</h1>
         </div>
-        <div className="w-full h-auto flex flex-wrap gap-6 mt-[40px] pt-6">
-          <div className="w-1/4 h-[300px] bg-[#1c1c1c] pt-[35px] pr-[20px] pl-[20px] rounded-lg">
+        <div className="w-full h-auto flex gap-8 mt-[40px] pt-6">
+          <div
+            className="basis-3/12 h-auto bg-[#1c1c1c] pt-[35px] pr-[20px] pl-[20px] rounded-lg"
+            data-aos="fade-up"
+          >
             <p className="text-white text-justify tracking-wide">
               I would be happy to answer any questions you may have about my
               skills.
@@ -39,8 +53,8 @@ const ContactUs = () => {
             </p>
           </div>
           {/* ---------------------form------------- */}
-          <div className="w-[3/4] border">
-            <h1>form content</h1>
+          <div className="basis-9/12 h-auto">
+            <FormContent />
           </div>
         </div>
       </WrapperContainer>

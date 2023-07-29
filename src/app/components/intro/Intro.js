@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import "./Intro.css";
 import WrapperContainer from "@/app/WrapperContainer";
@@ -7,6 +8,10 @@ import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
 
 const Intro = () => {
+  useEffect(() => {
+    // Set the scroll position to (0, 0) on component mount (page load)
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="intro_main_container">
       <div className="background_img"></div>

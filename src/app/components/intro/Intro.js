@@ -63,8 +63,8 @@ const Intro = () => {
               </Link>
             </div>
           </div>
-          <div className=" w-full md:w-3/6 h-[250px] md:h-auto flex items-start justify-center lg:mt-8">
-            <img src="/image/girl.png" alt="image" className="intro_main_img" />
+          <div className="w-full md:w-3/6 h-[250px] md:h-auto flex items-start justify-center lg:mt-8">
+            <Image src="/image/girl.png" alt="image" width={550} height={550} />
           </div>
         </div>
       </WrapperContainer>

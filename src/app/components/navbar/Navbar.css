@@ -38,13 +38,16 @@ ul a {
 ul a li {
   list-style: none;
   margin: 0 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 18px;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
   font-weight: 400;
   cursor: pointer;
   color: #fff;
   border-radius: 5px;
   position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 /* .nav_bg_1::before {
   content: "";
@@ -120,7 +123,8 @@ ul a li:hover:after {
     width: 70%;
     height: 100vh;
     position: absolute;
-    background-color: #010101;
+    background-color: #1c1c1c;
+    /* background-color: #010101; */
     padding: 20px 20px 0px 20px;
     top: 0px;
     right: 0;

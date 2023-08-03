@@ -7,8 +7,8 @@ import AOS from "aos";
 const Skills = () => {
   useEffect(() => {
     AOS.init({
-      duration: 500, // Animation duration in milliseconds
-      offset: 100, // Offset (in pixels) from the element's position when triggering animation
+      duration: 300, // Animation duration in milliseconds
+      offset: 200, // Offset (in pixels) from the element's position when triggering animation
       easing: "ease", // Animation easing (default: 'ease')
       // Add more AOS options here
     });
@@ -25,7 +25,7 @@ const Skills = () => {
           <div className="w-1/2 h-[400px] text-white flex items-center justify-center flex-wrap">
             <div
               className="w-full h-auto flex flex-wrap items-center gap-8"
-              data-aos="fade-up"
+              data-aos="fade-right"
             >
               {skill.map((val, index) => (
                 <div
@@ -39,7 +39,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="w-1/2 h-[400px] text-white flex items-center justify-center">
-            <div className="w-full" data-aos="fade-up">
+            <div className="w-full" data-aos="fade-left">
               <p className="skill_para">
                 A frontend developer with less than one year of experience. I'm
                 proficient in HTML , CSS , JAVASCRIPT, and have experience

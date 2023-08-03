@@ -11,7 +11,7 @@ const ContactUs = () => {
   useEffect(() => {
     AOS.init({
       duration: 400,
-      offset: 100,
+      offset: 200,
       easing: "ease",
       // Add more AOS options here
     });

@@ -1,8 +1,8 @@
 import "./globals.css";
 import Head from "next/head";
-import { Roboto } from "next/font/google";
+import { Poppins } from "next/font/google";
 
-const roboto = Roboto({
+const roboto = Poppins({
   weight: ["100", "300", "400", "500"],
   style: ["normal", "italic"],
   subsets: ["latin"],

@@ -15,12 +15,6 @@ const Intro = () => {
   return (
     <section className="intro_main_container">
       <div className="background_img"></div>
-      <div className="cloud_soft">
-        <img src="/image/cloud-soft.png" atl="img" />
-      </div>
-      <div className="cloud">
-        <img src="/image/cloud.png" />
-      </div>
       <WrapperContainer>
         <Navbar />
         <div className="about_container w-full flex items-center justify-center gap-6 flex-col-reverse md:flex-row h-100 md:gap-x-14 relative">
@@ -39,18 +33,11 @@ const Intro = () => {
                   Dipu Kumar Mandal
                 </h1>
               </div>
-              <div className="name_div_child">
-                <h1 className="text-white text-3xl leading-normal lg:text-5xl md:mt-3 md:mb-4">
-                  a Frontend Developer
-                </h1>
-              </div>
             </div>
 
             <p className="text-white my-5 text-sm md:text-1xl text-justify md:mb-2">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters,
+              As a frontend developer, I specialize in creating user interfaces
+              and experiences that bring websites and web applications to life.
             </p>
             <div className="mt-6">
               <Link href="#contact">
@@ -64,7 +51,13 @@ const Intro = () => {
             </div>
           </div>
           <div className="w-full md:w-3/6 h-[250px] md:h-auto flex items-start justify-center lg:mt-8">
-            <Image src="/image/girl.png" alt="image" width={550} height={550} />
+            <Image
+              src="/image/girl.png"
+              alt="image"
+              width={400}
+              height={400}
+              layout="responsive"
+            />
           </div>
         </div>
       </WrapperContainer>

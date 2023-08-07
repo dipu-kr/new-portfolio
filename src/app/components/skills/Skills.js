@@ -5,21 +5,19 @@ import { skill } from "./skillData";
 import AOS from "aos";
 
 const Skills = () => {
-  const handleDownload = () => {
-    // Replace the URL with the actual URL of your resume file
-    const resumeUrl =
-      "https://drive.google.com/file/d/1grlRa7sulmsyqfP4zAEKOJQUhWc9YTZc/view?usp=drivesdk";
+  // const handleDownload = () => {
+  //   const resumeUrl =
+  //     "https://drive.google.com/file/d/1grlRa7sulmsyqfP4zAEKOJQUhWc9YTZc/view?usp=drivesdk";
 
-    // Trigger the download using an anchor tag
-    const link = document.createElement("a");
-    link.href = resumeUrl;
-    link.target = "_blank";
-    link.download =
-      "file/d/1grlRa7sulmsyqfP4zAEKOJQUhWc9YTZc/view?usp=drivesdk";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  //   const link = document.createElement("a");
+  //   link.href = resumeUrl;
+  //   link.target = "_blank";
+  //   link.download =
+  //     "file/d/1grlRa7sulmsyqfP4zAEKOJQUhWc9YTZc/view?usp=drivesdk";
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
 
   useEffect(() => {
     AOS.init({
@@ -67,9 +65,7 @@ const Skills = () => {
                 constraints on web, and building responsive user interfaces.
               </p>
               <div className="cv_download_btn_div">
-                <button className="cv_download_btn" onClick={handleDownload}>
-                  Download CV
-                </button>
+                <button className="cv_download_btn">Download CV</button>
               </div>
             </div>
           </div>

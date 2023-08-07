@@ -5,19 +5,19 @@ import { skill } from "./skillData";
 import AOS from "aos";
 
 const Skills = () => {
-  // const handleDownload = () => {
-  //   const resumeUrl =
-  //     "https://drive.google.com/file/d/1grlRa7sulmsyqfP4zAEKOJQUhWc9YTZc/view?usp=drivesdk";
+  const handleDownload = () => {
+    const resumeUrl =
+      "https://drive.google.com/file/d/1grlRa7sulmsyqfP4zAEKOJQUhWc9YTZc/view?usp=drivesdk";
 
-  //   const link = document.createElement("a");
-  //   link.href = resumeUrl;
-  //   link.target = "_blank";
-  //   link.download =
-  //     "file/d/1grlRa7sulmsyqfP4zAEKOJQUhWc9YTZc/view?usp=drivesdk";
-  //   document.body.appendChild(link);
-  //   link.click();
-  //   document.body.removeChild(link);
-  // };
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.target = "_blank";
+    link.download =
+      "file/d/1grlRa7sulmsyqfP4zAEKOJQUhWc9YTZc/view?usp=drivesdk";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   useEffect(() => {
     AOS.init({
@@ -58,14 +58,16 @@ const Skills = () => {
           <div className="w-full h-auto md:w-1/2 md:h-[400px] text-white flex items-center justify-center">
             <div className="w-full mt-8" data-aos="fade-up">
               <p className="skill_para">
-                I'm a frontend developer with 7+ months of experince in React
+                I am a frontend developer with 7+ months of experince in React
                 and state management like Redux with proficiency in web
                 technology like HTML5, CSS3, javaScript, building large-scale
                 web applications, cross-browser platforms, and design
                 constraints on web, and building responsive user interfaces.
               </p>
               <div className="cv_download_btn_div">
-                <button className="cv_download_btn">Download CV</button>
+                <button className="cv_download_btn" onClick={handleDownload}>
+                  Download CV
+                </button>
               </div>
             </div>
           </div>

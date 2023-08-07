@@ -31,7 +31,7 @@ const Intro = () => {
                 height={40}
                 className="mx-2 w-[40px] md:w-[50px]"
               />
-              <h2>, I Am</h2>
+              <h2> I Am</h2>
             </div>
             <div className="name_div">
               <div className="name_div_child">

@@ -26,6 +26,7 @@ const Intro = () => {
               <h2>Hello</h2>
               <img
                 src="/image/hand.png"
+                alt="icon"
                 className="mx-2 w-[40px] md:w-[50px]"
               />
               <h2>, I Am</h2>

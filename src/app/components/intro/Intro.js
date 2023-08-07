@@ -24,9 +24,11 @@ const Intro = () => {
           <div className="about_con_div w-full md:w-3/6">
             <div className="flex items-center text-white text-2xl md:text-3xl lg:text-4xl">
               <h2>Hello</h2>
-              <img
+              <Image
                 src="/image/hand.png"
                 alt="icon"
+                width={40}
+                height={40}
                 className="mx-2 w-[40px] md:w-[50px]"
               />
               <h2>, I Am</h2>

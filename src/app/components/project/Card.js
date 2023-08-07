@@ -3,22 +3,22 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import AOS from "aos";
 
-const Card = ({ dataList }) => {
+const Card = ({ filterData }) => {
   useEffect(() => {
     AOS.init({
-      duration: 600,
-      offset: 120,
+      duration: 400,
+      offset: 100,
       easing: "ease",
       // Add more AOS options here
     });
   }, []);
   return (
-    <div className="w-full grid grid-cols-4 gap-4">
-      {dataList.map((data, index) => (
+    <div className="w-full grid grid-cols-1 gap-5 md:grid-cols-4 md:gap-4">
+      {filterData.map((data, index) => (
         <div
           className="w-full h-[250px] flex flex-col gap-2 rounded-lg bg-white shadow-lg p-2"
           key={index}
-          data-aos="fade-up"
+          data-aos="zoom-in-up"
         >
           <div className="w-full h-[170px]">
             <Image

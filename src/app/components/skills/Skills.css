@@ -31,3 +31,15 @@
   cursor: pointer;
   transform: scale(1.2);
 }
+
+@media screen and (max-width: 640px) {
+  .skills_main_container {
+    height: auto;
+    padding-bottom: 15px;
+  }
+  .skill_para {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-align: justify;
+  }
+}

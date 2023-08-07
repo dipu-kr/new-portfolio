@@ -20,8 +20,8 @@ export default function Home() {
     <div className="w-full overflow-x-hidden">
       <Intro />
       <Skills />
-      {/* <Project /> */}
-      {/* <ContactUs /> */}
+      <Project />
+      <ContactUs />
     </div>
   );
 }

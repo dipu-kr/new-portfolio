@@ -28,7 +28,7 @@ export const skill = [
   {
     id: 4,
     icon: <SiTailwindcss />,
-    name: "TAILWIND CSS",
+    name: "TAILWIND",
     clr: "#3490dc",
   },
   {

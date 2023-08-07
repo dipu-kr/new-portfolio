@@ -17,7 +17,10 @@ const Intro = () => {
       <div className="background_img"></div>
       <WrapperContainer>
         <Navbar />
-        <div className="about_container w-full flex items-center justify-center gap-6 flex-col-reverse md:flex-row h-100 md:gap-x-14 relative">
+        <div
+          id="about"
+          className="about_container w-full h-auto md:h-[100vh - 70px] flex items-center justify-center gap-6 flex-col-reverse md:flex-row  md:gap-x-14 relative"
+        >
           <div className="about_con_div w-full md:w-3/6">
             <div className="flex items-center text-white text-2xl md:text-3xl lg:text-4xl">
               <h2>Hello</h2>
@@ -40,9 +43,9 @@ const Intro = () => {
               and experiences that bring websites and web applications to life.
             </p>
             <div className="mt-6">
-              <Link href="#contact">
-                <button className="flex items-center justify-between bg-white text-black px-3 py-1 md:px-6 md:py-3 rounded-sm  text-1xl md:text-2xl group hover:bg-yellow-500 relative transition duration-150 ease-out hover:ease-in">
-                  Contact me
+              <Link href="https://github.com/dipu-kr" target="_blank">
+                <button className="flex items-center justify-between bg-white text-black px-3 py-1 md:px-4 md:py-2 rounded-sm  text-sm md:text-[17px] group hover:bg-yellow-500 relative transition duration-150 ease-out hover:ease-in">
+                  Github Link
                   <span className="bg-yellow-500 text-black p-1 ml-3 rounded-full group-hover:bg-white transition duration-150 ease-out hover:ease-in">
                     <BsArrowUpRight className=" text-xs md:text-sm" />
                   </span>
@@ -50,14 +53,18 @@ const Intro = () => {
               </Link>
             </div>
           </div>
-          <div className="w-full md:w-3/6 h-[250px] md:h-auto flex items-start justify-center lg:mt-8">
-            <Image
-              src="/image/girl.png"
-              alt="image"
-              width={400}
-              height={400}
-              layout="responsive"
-            />
+          <div className="w-full md:w-3/6 h-auto flex justify-center mt-8 md:flex md:items-center md:justify-center">
+            <div className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] flex justify-center mt-8 md:flex md:items-center md:justify-center">
+              <Image
+                src="/image/moon.png"
+                alt="Moon"
+                priority={true}
+                width={300}
+                height={300}
+                // layout="responsive"
+                className="object-cover moon_img"
+              />
+            </div>
           </div>
         </div>
       </WrapperContainer>

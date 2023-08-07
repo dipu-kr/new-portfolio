@@ -6,3 +6,11 @@
   /* background-color: #1c1c1c; */
   /* margin-bottom: 20px; */
 }
+
+/* -----------------media query------------------ */
+@media screen and (max-width: 640px) {
+  .project_main_container {
+    height: auto;
+    padding-bottom: 15px;
+  }
+}

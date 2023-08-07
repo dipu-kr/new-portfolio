@@ -30,17 +30,17 @@ const Navbar = () => {
             About
           </li>
         </Link>
-        <Link href="#proficiencies">
+        <Link href="#skills">
           <li onClick={menuControl} className="nav_bg_2">
             Skills
           </li>
         </Link>
-        <Link href="#skills">
+        <Link href="#projects">
           <li onClick={menuControl} className="nav_bg_3">
             Project
           </li>
         </Link>
-        <Link href="#projects">
+        <Link href="#contact">
           <li onClick={menuControl}>Contact</li>
         </Link>
       </ul>

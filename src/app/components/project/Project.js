@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Project.css";
 import WrapperContainer from "@/app/WrapperContainer";
 import Card from "./Card";
@@ -7,6 +7,24 @@ import { dataList } from "./projectsData";
 import AOS from "aos";
 
 const Project = () => {
+  const [filterData, setFilterData] = useState(dataList);
+  const [category, setCategory] = useState("all");
+
+  //------------------ filter data funtion-------------
+  useEffect(() => {
+    if (category === "all") {
+      setFilterData(dataList);
+    }
+    if (category === "static") {
+      const filterItem = dataList.filter((val) => val.type === category);
+      setFilterData(filterItem);
+    }
+    if (category === "dynamic") {
+      const filterItem = dataList.filter((val) => val.type === category);
+      setFilterData(filterItem);
+    }
+  }, [category]);
+
   useEffect(() => {
     AOS.init({
       duration: 400,
@@ -16,30 +34,36 @@ const Project = () => {
     });
   }, []);
   return (
-    <section className="project_main_container">
+    <section id="projects" className="project_main_container">
       <WrapperContainer>
         <div className="w-full h-auto">
           <div className="w-full text-center pt-6">
-            <h1 className="text-white text-3xl" data-aos="fade-up">
+            <h1
+              className="text-white text-2xl mdtext-3xl mb-6"
+              data-aos="fade-up"
+            >
               Check My Portfolio
             </h1>
           </div>
           <div className="w-full flex items-center justify-center mt-6">
-            <div className="w-1/3 h-[45px] flex items-center justify-center rounded-lg gap-2">
+            <div className="w-[80%] md:w-1/3 md:h-[45px] flex items-center justify-center rounded-lg gap-2">
               <button
-                className="h-[45px] outline-none flex-1 bg-gray-700 hover:ease-in-out text-slate-200 hover:bg-slate-200 hover:text-black shadow-lg rounded-full"
+                onClick={() => setCategory("all")}
+                className="h-[40px] text-xs md:text-sm rounded-md md:h-[45px] outline-none flex-1 bg-gray-700 hover:ease-in-out text-slate-200 hover:bg-slate-200 hover:text-black shadow-lg md:rounded-full"
                 data-aos="fade-up"
               >
                 All
               </button>
               <button
-                className="h-[45px] outline-none flex-1 bg-gray-700 hover:ease-in-out text-slate-200 hover:bg-slate-200 hover:text-black shadow-lg rounded-full"
+                onClick={() => setCategory("static")}
+                className="h-[40px] text-xs md:text-sm rounded-md md:h-[45px] outline-none flex-1 bg-gray-700 hover:ease-in-out text-slate-200 hover:bg-slate-200 hover:text-black shadow-lg md:rounded-full"
                 data-aos="fade-up"
               >
                 Web Page
               </button>
               <button
-                className="h-[45px] outline-none flex-1 bg-gray-700 hover:ease-in-out text-slate-200 hover:bg-slate-200 hover:text-black shadow-lg rounded-full"
+                onClick={() => setCategory("dynamic")}
+                className="h-[40px] text-xs md:text-sm rounded-md md:h-[45px] outline-none flex-1 bg-gray-700 hover:ease-in-out text-slate-200 hover:bg-slate-200 hover:text-black shadow-lg md:rounded-full"
                 data-aos="fade-up"
               >
                 Web App
@@ -47,7 +71,7 @@ const Project = () => {
             </div>
           </div>
           <div className="w-full mt-8 pb-8">
-            <Card dataList={dataList} />
+            <Card filterData={filterData} />
           </div>
         </div>
       </WrapperContainer>

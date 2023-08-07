@@ -9,7 +9,8 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 /* .intro_main_container {
   width: 100%;

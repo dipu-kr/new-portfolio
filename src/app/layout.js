@@ -17,15 +17,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* <head>
-        <link
-          rel="preload"
-          href="/image/moon.png"
-          as="image"
-          media="(prefers-reduced-motion: no-preference)"
-          imageSrcSet="/image/moon.png 1x, /image/moon@2x.png 2x"
-        />
-      </head> */}
       <body className={roboto.className}>{children}</body>
     </html>
   );

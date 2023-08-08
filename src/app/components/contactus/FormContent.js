@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, useEffect, useRef } from "react";
 import { useFormik } from "formik";
 import { formSchema } from "../schemas/validation";
@@ -137,9 +138,7 @@ const FormContent = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             className="w-full h-[120px] bg-[#1c1c1c] border border-slate-400 outline-none rounded-md pl-4 pt-2 "
-          >
-            Your message...
-          </textarea>
+          ></textarea>
           {formik.touched.message && formik.errors.message ? (
             <p className="text-sm text-red-400">{formik.errors.message}</p>
           ) : null}

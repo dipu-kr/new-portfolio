@@ -63,10 +63,7 @@ const ContactUs = () => {
               <span className="mr-3 text-1xl md:text-2xl">
                 <MdOutlineEmail />
               </span>
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=dipum906@gmail.com"
-                target="_black"
-              >
+              <a href="mailto:dipum906@gmail.com" target="_black">
                 <span className="text-sm md:text-1xl">dipum906@gmail.com</span>
               </a>
             </p>

@@ -23,9 +23,7 @@ const Intro = () => {
         >
           <div className="about_con_div w-full md:w-3/6">
             <div className="flex items-center">
-              <h2 className="text-white text-[20px] md:text-2xl lg:text-3xl">
-                Hello
-              </h2>
+              <h2 className="text-white text-lg md:text-xl">Hello</h2>
               <Image
                 src="/image/hand.png"
                 alt="icon"
@@ -33,26 +31,23 @@ const Intro = () => {
                 height={40}
                 className="mx-2 w-[40px] md:w-[40px]"
               />
-              <h2 className="text-white text-[20px] md:text-2xl lg:text-3xl">
-                {" "}
-                I Am
-              </h2>
+              <h2 className="text-white text-[20px] md:text-xl"> I Am</h2>
             </div>
             <div className="name_div">
               <div className="name_div_child">
-                <h1 className="text-white text-[22px] md:text-[25px] lg:text-3xl md:mt-3 md:mb-4">
+                <h1 className="text-white text-[20px] md:text-[22px] md:mt-3 md:mb-2">
                   Dipu Kumar Mandal
                 </h1>
               </div>
             </div>
 
-            <p className="text-white my-5 font-light text-sm md:text-base md:text-1xl text-justify md:mb-2">
+            <p className="text-white my-3 font-light text-xs md:text-sm text-justify md:mb-2">
               As a frontend developer, I specialize in creating user interfaces
               and experiences that bring websites and web applications to life.
             </p>
             <div className="mt-6 inline-block">
               <Link href="https://github.com/dipu-kr" target="_blank">
-                <button className="flex items-center justify-between bg-white text-black px-3 py-1 md:px-4 md:py-2 rounded-sm  text-sm md:text-[17px] group hover:bg-yellow-500 relative transition duration-150 ease-out hover:ease-in">
+                <button className="flex items-center justify-between bg-white text-black px-3 py-1 md:px-4 md:py-2 rounded-sm  text-sm group hover:bg-yellow-500 relative transition duration-150 ease-out hover:ease-in">
                   Github Link
                   <span className="bg-yellow-500 text-black p-1 ml-3 rounded-full group-hover:bg-white transition duration-150 ease-out hover:ease-in">
                     <BsArrowUpRight className=" text-xs md:text-sm" />

@@ -13,10 +13,10 @@ const Card = ({ filterData }) => {
     });
   }, []);
   return (
-    <div className="w-full grid grid-cols-1 gap-5 md:grid-cols-4 md:gap-4">
+    <div className="w-full grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 md:gap-4">
       {filterData.map((data, index) => (
         <div
-          className="w-full h-[250px] flex flex-col gap-2 rounded-lg bg-white shadow-lg p-2"
+          className="w-[95%] lg:w-[85%] h-[250px] m-auto flex flex-col gap-2 rounded-lg bg-white shadow-lg p-2"
           key={index}
           data-aos="zoom-in-up"
         >
@@ -36,7 +36,7 @@ const Card = ({ filterData }) => {
               rel="noreferrer noopener"
               className="w-full"
             >
-              <button className="bg-[#21243d] text-white px-8 h-[40px] w-[100%] shadow-lg rounded-lg hover:bg-[#2d3044] ease-in-out">
+              <button className="bg-[#21243d] text-white text-sm px-8 h-[35px] w-[100%] shadow-lg rounded-lg hover:bg-[#2d3044] ease-in-out">
                 View
               </button>
             </a>

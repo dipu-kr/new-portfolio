@@ -28,11 +28,11 @@ const Skills = () => {
     });
   }, []);
   return (
-    <section id="skills" className="skills_main_container pt-6">
+    <section id="skills" className="skills_main_container flex items-center">
       <WrapperContainer>
-        <div className="w-full text-center pt-6">
+        <div className="w-full text-center">
           <h1
-            className="text-white text-[23px] md:text-2xl lg:text-3xl mb-6"
+            className="text-white text-[18px] md:text-2xl mb-6"
             data-aos="fade-up"
           >
             SKILLS
@@ -46,18 +46,23 @@ const Skills = () => {
             >
               {skill.map((val, index) => (
                 <div
-                  className="w-1/4 h-20 flex flex-col items-center justify-center text-5xl skill_icon"
+                  className="w-1/4 h-20 flex flex-col items-center justify-center skill_icon"
                   key={index}
                 >
-                  <span style={{ color: val.clr }}>{val.icon}</span>
-                  <span className="text-sm mt-1">{val.name}</span>
+                  <span
+                    style={{ color: val.clr }}
+                    className="text-[30px] md:text-[36px]"
+                  >
+                    {val.icon}
+                  </span>
+                  <span className="text-[12px] mt-1">{val.name}</span>
                 </div>
               ))}
             </div>
           </div>
           <div className="w-full h-auto md:w-1/2 md:h-[400px] text-white flex items-center justify-center">
             <div className="w-full mt-8" data-aos="fade-up">
-              <p className="skill_para font-light text-sm md:text-base">
+              <p className="skill_para font-light text-xs md:text-sm">
                 I am a frontend developer with 8 months of experince in React
                 and state management like Redux with proficiency in web
                 technology like HTML5, CSS3, javaScript, building large-scale
@@ -65,7 +70,10 @@ const Skills = () => {
                 constraints on web, and building responsive user interfaces.
               </p>
               <div className="cv_download_btn_div">
-                <button className="cv_download_btn" onClick={handleDownload}>
+                <button
+                  className="cv_download_btn text-sm"
+                  onClick={handleDownload}
+                >
                   Download CV
                 </button>
               </div>

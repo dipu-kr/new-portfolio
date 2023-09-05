@@ -43,7 +43,7 @@ const Project = () => {
         <div className="w-full h-auto">
           <div className="w-full text-center pt-6">
             <h1
-              className="text-white text-[23px] md:text-2xl lg:text-3xl mb-6"
+              className="text-white text-[18px] md:text-2xl mb-6"
               data-aos="fade-up"
             >
               Check My Portfolio
@@ -53,7 +53,7 @@ const Project = () => {
             <div className="w-[80%] md:w-1/3 md:h-[45px] flex items-center justify-center rounded-lg gap-2">
               <button
                 onClick={() => setCategory("all")}
-                className={`h-[40px] text-xs md:text-sm rounded-md md:h-[45px] outline-none flex-1 bg-gray-700 hover:ease-in-out text-slate-200 hover:bg-slate-200 hover:text-black shadow-lg md:rounded-full ${
+                className={`h-[32px] text-xs md:text-[13px]  md:h-[35px] outline-none flex-1 bg-gray-700 hover:ease-in-out text-slate-200 hover:bg-slate-200 hover:text-black shadow-lg rounded-full ${
                   select === "all" && "select"
                 }`}
                 data-aos="fade-up"
@@ -61,18 +61,24 @@ const Project = () => {
                 All
               </button>
               <button
-                onClick={() => setCategory("static")}
-                className={`h-[40px] text-xs md:text-sm rounded-md md:h-[45px] outline-none flex-1 bg-gray-700 hover:ease-in-out text-slate-200 hover:bg-slate-200 hover:text-black shadow-lg md:rounded-full ${
-                  select === "wep_page" && "select"
+                onClick={() => {
+                  setCategory("static");
+                  setSelect("web_page");
+                }}
+                className={`h-[32px] text-xs md:text-[13px]  md:h-[35px] outline-none flex-1 bg-gray-700 hover:ease-in-out text-slate-200 hover:bg-slate-200 hover:text-black shadow-lg rounded-full ${
+                  select === "web_page" && "select"
                 }`}
                 data-aos="fade-up"
               >
                 Web Page
               </button>
               <button
-                onClick={() => setCategory("dynamic")}
-                className={`h-[40px] text-xs md:text-sm rounded-md md:h-[45px] outline-none flex-1 bg-gray-700 hover:ease-in-out text-slate-200 hover:bg-slate-200 hover:text-black shadow-lg md:rounded-full ${
-                  select === "wep_app" && "select"
+                onClick={() => {
+                  setCategory("dynamic");
+                  setSelect("web_app");
+                }}
+                className={`h-[32px] text-xs md:text-[13px]  md:h-[35px] outline-none flex-1 bg-gray-700 hover:ease-in-out text-slate-200 hover:bg-slate-200 hover:text-black shadow-lg rounded-full ${
+                  select === "web_app" && "select"
                 }`}
                 data-aos="fade-up"
               >

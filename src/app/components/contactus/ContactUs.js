@@ -18,25 +18,25 @@ const ContactUs = () => {
   }, []);
 
   return (
-    <div className="contactus_container" id="contact">
+    <div className="contactus_container flex items-center" id="contact">
       <WrapperContainer>
-        <div className="w-full text-center pt-6" data-aos="fade-up">
-          <h1 className="text-white text-[23px] md:text-2xl lg:text-3xl">
+        <div className="w-full text-center" data-aos="fade-up">
+          <h1 className="text-white text-[18px] md:text-2xl">
             Any Question? Feel Free
           </h1>
-          <h1 className="text-white text-2xl md:text-3xl">to Contact</h1>
+          <h1 className="text-white text-[18px] md:text-2xl">to Contact</h1>
         </div>
         <div className="w-full h-auto flex flex-col md:flex-row gap-8 mt-[40px] pt-6">
           <div
-            className="basis-2/4 md:basis-3/12 h-auto bg-[#1c1c1c] md:pt-[35px] p-[18px] md:pr-[20px] md:pl-[20px] rounded-lg"
+            className="basis-2/4 md:basis-3/12 h-auto bg-[#1c1c1c] md:pt-[35px] p-[18px] md:pr-[20px] md:pl-[20px] rounded-lg "
             data-aos="fade-up"
           >
-            <p className="text-white font-light text-sm md:text-base text-justify tracking-wide">
+            <p className="text-white font-light text-xs md:text-sm text-justify tracking-wide">
               I would be happy to answer any questions, you may have about my
               skills.
             </p>
             <p className="flex items-center text-white mt-6">
-              <span className="mr-3 text-1xl md:text-2xl">
+              <span className="mr-3 text-[20px] md:text-xl">
                 <BiPhoneCall />
               </span>
               <a
@@ -44,13 +44,13 @@ const ContactUs = () => {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <span className="font-light text-sm md:text-base">
+                <span className="font-light text-xs md:text-sm">
                   +917644949363
                 </span>
               </a>
             </p>
             <p className="flex items-center text-white mt-4">
-              <span className="mr-3 text-1xl md:text-2xl">
+              <span className="mr-3 text-[20px] md:text-xl">
                 <AiOutlineWhatsApp />
               </span>
               <a
@@ -58,17 +58,17 @@ const ContactUs = () => {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <span className="font-light text-sm md:text-base">
+                <span className="font-light text-xs md:text-sm">
                   +917087164123
                 </span>
               </a>
             </p>
             <p className="flex items-center text-white mt-4">
-              <span className="mr-3 text-1xl md:text-2xl">
+              <span className="mr-3 text-[20px] md:text-xl">
                 <MdOutlineEmail />
               </span>
               <a href="mailto:dipum906@gmail.com" target="_black">
-                <span className="font-light text-sm md:text-base">
+                <span className="font-light text-xs md:text-sm">
                   dipum906@gmail.com
                 </span>
               </a>

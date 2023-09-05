@@ -18,9 +18,12 @@ const ContactUs = () => {
   }, []);
 
   return (
-    <div className="contactus_container flex items-center" id="contact">
+    <div
+      className="contactus_container flex items-center pb-4 md:pb-0"
+      id="contact"
+    >
       <WrapperContainer>
-        <div className="w-full text-center" data-aos="fade-up">
+        <div className="w-full text-center pt-8" data-aos="fade-up">
           <h1 className="text-white text-[18px] md:text-2xl">
             Any Question? Feel Free
           </h1>

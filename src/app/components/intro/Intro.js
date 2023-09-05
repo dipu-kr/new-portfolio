@@ -41,11 +41,11 @@ const Intro = () => {
               </div>
             </div>
 
-            <p className="text-white my-3 font-light text-xs md:text-sm text-justify md:mb-2">
+            <p className="text-white my-3 md:my-3 font-light text-xs md:text-sm text-justify">
               As a frontend developer, I specialize in creating user interfaces
               and experiences that bring websites and web applications to life.
             </p>
-            <div className="mt-6 inline-block">
+            <div className="mt-4 inline-block">
               <Link href="https://github.com/dipu-kr" target="_blank">
                 <button className="flex items-center justify-between bg-white text-black px-3 py-1 md:px-4 md:py-2 rounded-sm  text-sm group hover:bg-yellow-500 relative transition duration-150 ease-out hover:ease-in">
                   Github Link

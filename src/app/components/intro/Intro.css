@@ -27,8 +27,8 @@
   border: 2px solid red;
 }
 .name_div {
-  height: 65px;
-  overflow: hidden;
+  /* height: 65px; */
+  /* overflow: hidden; */
 }
 .moon_img {
   /* position: relative; */

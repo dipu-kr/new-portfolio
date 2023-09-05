@@ -30,7 +30,7 @@ const Skills = () => {
   return (
     <section id="skills" className="skills_main_container flex items-center">
       <WrapperContainer>
-        <div className="w-full text-center">
+        <div className="w-full text-center pt-8">
           <h1
             className="text-white text-[18px] md:text-2xl mb-6"
             data-aos="fade-up"

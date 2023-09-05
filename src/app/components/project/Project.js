@@ -41,7 +41,7 @@ const Project = () => {
     <section id="projects" className="project_main_container">
       <WrapperContainer>
         <div className="w-full h-auto">
-          <div className="w-full text-center pt-6">
+          <div className="w-full text-center pt-8">
             <h1
               className="text-white text-[18px] md:text-2xl mb-6"
               data-aos="fade-up"

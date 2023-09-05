@@ -76,7 +76,7 @@ const FormContent = () => {
               value={formik.values.name}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              className="w-full h-[38px] bg-[#1c1c1c] border border-slate-500 outline-none rounded-md pl-4 text-xs md:text-sm"
+              className="w-full h-[38px] bg-[#1c1c1c] border border-slate-500 outline-none rounded-md pl-4 font-light text-xs md:text-sm"
             />
             {formik.touched.name && formik.errors.name ? (
               <p className="font-light text-xs md:text-sm text-red-400">
@@ -93,7 +93,7 @@ const FormContent = () => {
               value={formik.values.email}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              className="w-full h-[38px] bg-[#1c1c1c] border border-slate-500 outline-none rounded-md pl-4 text-xs md:text-sm "
+              className="w-full h-[38px] bg-[#1c1c1c] border border-slate-500 outline-none rounded-md pl-4 font-light text-xs md:text-sm "
             />
             {formik.touched.email && formik.errors.email ? (
               <p className="font-light text-xs md:text-sm text-red-400">
@@ -111,7 +111,7 @@ const FormContent = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               maxLength="10"
-              className="w-full h-[38px] bg-[#1c1c1c] border border-slate-500 outline-none rounded-md pl-4 text-xs md:text-sm"
+              className="w-full h-[38px] bg-[#1c1c1c] border border-slate-500 outline-none rounded-md pl-4 font-light text-xs md:text-sm"
             />
             {formik.touched.phone && formik.errors.phone ? (
               <p className="font-light text-xs md:text-sm text-red-400">
@@ -128,7 +128,7 @@ const FormContent = () => {
               value={formik.values.subject}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              className="w-full h-[38px] bg-[#1c1c1c] border border-slate-500 outline-none rounded-md pl-4 text-xs md:text-sm"
+              className="w-full h-[38px] bg-[#1c1c1c] border border-slate-500 outline-none rounded-md pl-4 font-light text-xs md:text-sm"
             />
             {formik.touched.subject && formik.errors.subject ? (
               <p className="font-light text-xs md:text-sm text-red-400">
@@ -145,7 +145,7 @@ const FormContent = () => {
             value={formik.values.message}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
-            className="w-full h-[100px] bg-[#1c1c1c] border border-slate-500 outline-none rounded-md pl-4 pt-2 text-xs md:text-sm"
+            className="w-full h-[100px] bg-[#1c1c1c] border border-slate-500 outline-none rounded-md pl-4 pt-2 font-light text-xs md:text-sm"
           ></textarea>
           {formik.touched.message && formik.errors.message ? (
             <p className="font-light text-xs md:text-sm text-red-400">

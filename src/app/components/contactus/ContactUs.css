@@ -1,7 +1,6 @@
 .contactus_container {
   width: 100%;
-  min-height: 90vh;
-  height: auto;
+  height: 100vh;
   background-color: #010101;
   /* border: 1px solid cyan; */
 }

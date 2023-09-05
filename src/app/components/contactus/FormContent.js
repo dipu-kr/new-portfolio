@@ -20,7 +20,7 @@ const FormContent = () => {
   useEffect(() => {
     AOS.init({
       duration: 400,
-      offset: 100,
+      offset: 130,
       easing: "ease",
       // Add more AOS options here
     });
@@ -76,10 +76,12 @@ const FormContent = () => {
               value={formik.values.name}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              className="w-full h-[43px] bg-[#1c1c1c] border border-slate-400 outline-none rounded-md pl-4 "
+              className="w-full h-[43px] bg-[#1c1c1c] border border-slate-400 outline-none rounded-md pl-4 text-xs md:text-sm"
             />
             {formik.touched.name && formik.errors.name ? (
-              <p className="text-sm text-red-400">{formik.errors.name}</p>
+              <p className="font-light text-xs md:text-sm text-red-400">
+                {formik.errors.name}
+              </p>
             ) : null}
           </div>
           <div className="w-[100%]">
@@ -91,10 +93,12 @@ const FormContent = () => {
               value={formik.values.email}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              className="w-full h-[43px] bg-[#1c1c1c] border border-slate-400 outline-none rounded-md pl-4 "
+              className="w-full h-[43px] bg-[#1c1c1c] border border-slate-400 outline-none rounded-md pl-4 text-xs md:text-sm "
             />
             {formik.touched.email && formik.errors.email ? (
-              <p className="text-sm text-red-400">{formik.errors.email}</p>
+              <p className="font-light text-xs md:text-sm text-red-400">
+                {formik.errors.email}
+              </p>
             ) : null}
           </div>
           <div>
@@ -107,10 +111,12 @@ const FormContent = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               maxLength="10"
-              className="w-full h-[43px] bg-[#1c1c1c] border border-slate-400 outline-none rounded-md pl-4 "
+              className="w-full h-[43px] bg-[#1c1c1c] border border-slate-400 outline-none rounded-md pl-4 text-xs md:text-sm"
             />
             {formik.touched.phone && formik.errors.phone ? (
-              <p className="text-sm text-red-400">{formik.errors.phone}</p>
+              <p className="font-light text-xs md:text-sm text-red-400">
+                {formik.errors.phone}
+              </p>
             ) : null}
           </div>
           <div>
@@ -122,10 +128,12 @@ const FormContent = () => {
               value={formik.values.subject}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              className="w-full h-[43px] bg-[#1c1c1c] border border-slate-400 outline-none rounded-md pl-4 "
+              className="w-full h-[43px] bg-[#1c1c1c] border border-slate-400 outline-none rounded-md pl-4 text-xs md:text-sm"
             />
             {formik.touched.subject && formik.errors.subject ? (
-              <p className="text-sm text-red-400">{formik.errors.subject}</p>
+              <p className="font-light text-xs md:text-sm text-red-400">
+                {formik.errors.subject}
+              </p>
             ) : null}
           </div>
         </div>
@@ -137,10 +145,12 @@ const FormContent = () => {
             value={formik.values.message}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
-            className="w-full h-[120px] bg-[#1c1c1c] border border-slate-400 outline-none rounded-md pl-4 pt-2 "
+            className="w-full h-[120px] bg-[#1c1c1c] border border-slate-400 outline-none rounded-md pl-4 pt-2 text-xs md:text-sm"
           ></textarea>
           {formik.touched.message && formik.errors.message ? (
-            <p className="text-sm text-red-400">{formik.errors.message}</p>
+            <p className="font-light text-xs md:text-sm text-red-400">
+              {formik.errors.message}
+            </p>
           ) : null}
         </div>
         <div className="mt-2 flex items-center justify-center md:justify-start">

@@ -3,6 +3,7 @@
   height: 100vh;
   position: relative;
   background-color: #010101;
+  /* border: 1px solid red; */
 }
 .background_img {
   width: 100%;

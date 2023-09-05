@@ -21,7 +21,7 @@ const ContactUs = () => {
     <div className="contactus_container" id="contact">
       <WrapperContainer>
         <div className="w-full text-center pt-6" data-aos="fade-up">
-          <h1 className="text-white text-2xl md:text-3xl">
+          <h1 className="text-white text-[23px] md:text-2xl lg:text-3xl">
             Any Question? Feel Free
           </h1>
           <h1 className="text-white text-2xl md:text-3xl">to Contact</h1>
@@ -31,7 +31,7 @@ const ContactUs = () => {
             className="basis-2/4 md:basis-3/12 h-auto bg-[#1c1c1c] md:pt-[35px] p-[18px] md:pr-[20px] md:pl-[20px] rounded-lg"
             data-aos="fade-up"
           >
-            <p className="text-white text-sm md:text-1xl text-justify tracking-wide">
+            <p className="text-white font-light text-sm md:text-base text-justify tracking-wide">
               I would be happy to answer any questions, you may have about my
               skills.
             </p>
@@ -44,7 +44,9 @@ const ContactUs = () => {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <span className="text-sm md:text-1xl">+917644949363</span>
+                <span className="font-light text-sm md:text-base">
+                  +917644949363
+                </span>
               </a>
             </p>
             <p className="flex items-center text-white mt-4">
@@ -56,7 +58,9 @@ const ContactUs = () => {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <span className="text-sm md:text-1xl">+917087164123</span>
+                <span className="font-light text-sm md:text-base">
+                  +917087164123
+                </span>
               </a>
             </p>
             <p className="flex items-center text-white mt-4">
@@ -64,7 +68,9 @@ const ContactUs = () => {
                 <MdOutlineEmail />
               </span>
               <a href="mailto:dipum906@gmail.com" target="_black">
-                <span className="text-sm md:text-1xl">dipum906@gmail.com</span>
+                <span className="font-light text-sm md:text-base">
+                  dipum906@gmail.com
+                </span>
               </a>
             </p>
           </div>

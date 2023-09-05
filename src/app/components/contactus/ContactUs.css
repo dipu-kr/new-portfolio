@@ -1,7 +1,9 @@
 .contactus_container {
   width: 100%;
-  height: 80vh;
+  min-height: 80vh;
+  height: auto;
   background-color: #010101;
+  /* border: 1px solid cyan; */
 }
 
 /* -----------------media query------------------ */

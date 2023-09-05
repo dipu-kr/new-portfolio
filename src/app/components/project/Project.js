@@ -43,7 +43,7 @@ const Project = () => {
         <div className="w-full h-auto">
           <div className="w-full text-center pt-6">
             <h1
-              className="text-white text-2xl mdtext-3xl mb-6"
+              className="text-white text-[23px] md:text-2xl lg:text-3xl mb-6"
               data-aos="fade-up"
             >
               Check My Portfolio

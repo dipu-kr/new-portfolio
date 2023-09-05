@@ -21,7 +21,7 @@ const Skills = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 300, // Animation duration in milliseconds
+      duration: 200, // Animation duration in milliseconds
       offset: 150, // Offset (in pixels) from the element's position when triggering animation
       easing: "ease", // Animation easing (default: 'ease')
       // Add more AOS options here
@@ -32,7 +32,7 @@ const Skills = () => {
       <WrapperContainer>
         <div className="w-full text-center pt-6">
           <h1
-            className="text-white text-2xl md:text-3xl mb-6"
+            className="text-white text-[23px] md:text-2xl lg:text-3xl mb-6"
             data-aos="fade-up"
           >
             SKILLS
@@ -57,7 +57,7 @@ const Skills = () => {
           </div>
           <div className="w-full h-auto md:w-1/2 md:h-[400px] text-white flex items-center justify-center">
             <div className="w-full mt-8" data-aos="fade-up">
-              <p className="skill_para">
+              <p className="skill_para font-light text-sm md:text-base">
                 I am a frontend developer with 8 months of experince in React
                 and state management like Redux with proficiency in web
                 technology like HTML5, CSS3, javaScript, building large-scale

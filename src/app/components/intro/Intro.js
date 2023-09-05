@@ -22,30 +22,35 @@ const Intro = () => {
           className="about_container w-full h-auto md:h-[100vh - 70px] flex items-center justify-center gap-6 flex-col-reverse md:flex-row  md:gap-x-14 relative"
         >
           <div className="about_con_div w-full md:w-3/6">
-            <div className="flex items-center text-white text-2xl md:text-3xl lg:text-4xl">
-              <h2>Hello</h2>
+            <div className="flex items-center">
+              <h2 className="text-white text-[20px] md:text-2xl lg:text-3xl">
+                Hello
+              </h2>
               <Image
                 src="/image/hand.png"
                 alt="icon"
                 width={40}
                 height={40}
-                className="mx-2 w-[40px] md:w-[50px]"
+                className="mx-2 w-[40px] md:w-[40px]"
               />
-              <h2> I Am</h2>
+              <h2 className="text-white text-[20px] md:text-2xl lg:text-3xl">
+                {" "}
+                I Am
+              </h2>
             </div>
             <div className="name_div">
               <div className="name_div_child">
-                <h1 className="text-white text-3xl lg:text-5xl md:mt-3 md:mb-4">
+                <h1 className="text-white text-[22px] md:text-[25px] lg:text-3xl md:mt-3 md:mb-4">
                   Dipu Kumar Mandal
                 </h1>
               </div>
             </div>
 
-            <p className="text-white my-5 text-sm md:text-1xl text-justify md:mb-2">
+            <p className="text-white my-5 font-light text-sm md:text-base md:text-1xl text-justify md:mb-2">
               As a frontend developer, I specialize in creating user interfaces
               and experiences that bring websites and web applications to life.
             </p>
-            <div className="mt-6">
+            <div className="mt-6 inline-block">
               <Link href="https://github.com/dipu-kr" target="_blank">
                 <button className="flex items-center justify-between bg-white text-black px-3 py-1 md:px-4 md:py-2 rounded-sm  text-sm md:text-[17px] group hover:bg-yellow-500 relative transition duration-150 ease-out hover:ease-in">
                   Github Link

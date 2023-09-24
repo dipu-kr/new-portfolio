@@ -65,7 +65,7 @@ const Intro = () => {
                 width={300}
                 height={300}
                 // layout="responsive"
-                className="object-cover moon_img"
+                className="h-auto object-cover moon_img"
               />
             </div>
           </div>

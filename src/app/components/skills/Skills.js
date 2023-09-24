@@ -63,7 +63,7 @@ const Skills = () => {
           <div className="w-full h-auto md:w-1/2 md:h-[400px] text-white flex items-center justify-center">
             <div className="w-full mt-8" data-aos="fade-up">
               <p className="skill_para font-light text-xs md:text-sm">
-                I am a frontend developer with 8 months of experince in React
+                I am a frontend developer with 10 months of experince in React
                 and state management like Redux with proficiency in web
                 technology like HTML5, CSS3, javaScript, building large-scale
                 web applications, cross-browser platforms, and design

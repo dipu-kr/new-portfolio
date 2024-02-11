@@ -29,7 +29,7 @@ const Intro = () => {
                 alt="icon"
                 width={40}
                 height={40}
-                className="mx-2 w-[40px] md:w-[40px]"
+                className="mx-2"
               />
               <h2 className="text-white text-[20px] md:text-xl"> I Am</h2>
             </div>
@@ -57,15 +57,15 @@ const Intro = () => {
             </div>
           </div>
           <div className="w-full md:w-3/6 h-auto flex justify-center mt-8 md:flex md:items-center md:justify-center">
-            <div className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] flex justify-center mt-8 md:flex md:items-center md:justify-center">
+            <div className="flex justify-center mt-0 md:flex md:items-center md:justify-center">
               <Image
-                src="/image/moon.png"
+                src="/image/user.png"
                 alt="Moon"
                 priority={true}
-                width={300}
+                width={400}
                 height={300}
                 // layout="responsive"
-                className="h-auto object-cover moon_img"
+                className="h-auto object-cover"
               />
             </div>
           </div>

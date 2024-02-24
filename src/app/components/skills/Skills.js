@@ -21,10 +21,9 @@ const Skills = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 200, // Animation duration in milliseconds
-      offset: 150, // Offset (in pixels) from the element's position when triggering animation
-      easing: "ease", // Animation easing (default: 'ease')
-      // Add more AOS options here
+      duration: 200,
+      offset: 150,
+      easing: "ease",
     });
   }, []);
   return (
@@ -63,11 +62,12 @@ const Skills = () => {
           <div className="w-full h-auto md:w-1/2 md:h-[400px] text-white flex items-center justify-center">
             <div className="w-full mt-8" data-aos="fade-up">
               <p className="skill_para font-light text-xs md:text-sm">
-                I am a frontend developer with more than 1 year of experince in
-                React and state management like Redux with proficiency in web
-                technology like HTML5, CSS3, javaScript, building large-scale
-                web applications, cross-browser platforms, and design
-                constraints on web, and building responsive user interfaces.
+                I am a Web Developer with 1.2 year of experince in React and
+                state management like Redux with proficiency in web technology
+                like HTML5, CSS3, javaScript, Node, Express and Mongodb,
+                building large-scale web applications, cross-browser platforms,
+                and design constraints on web, and building responsive user
+                interfaces.
               </p>
               <div className="cv_download_btn_div">
                 <button

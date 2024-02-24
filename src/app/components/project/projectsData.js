@@ -42,14 +42,14 @@ export const dataList = [
     githubLink: "https://github.com/dipu-kr/smalll_e-comm_site",
     type: "dynamic",
   },
-  {
-    id: 5,
-    name: "ToDo App",
-    image: Proj4,
-    skills: "React,Redux,BootStrap,Localstorage",
-    link: "https://react-redux-todo-app1.netlify.app",
-    type: "dynamic",
-  },
+  // {
+  //   id: 5,
+  //   name: "ToDo App",
+  //   image: Proj4,
+  //   skills: "React,Redux,BootStrap,Localstorage",
+  //   link: "https://react-redux-todo-app1.netlify.app",
+  //   type: "dynamic",
+  // },
 
   {
     id: 6,

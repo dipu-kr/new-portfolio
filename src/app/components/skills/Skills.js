@@ -7,13 +7,15 @@ import AOS from "aos";
 const Skills = () => {
   const handleDownload = () => {
     const resumeUrl =
-      "https://drive.google.com/file/d/1grlRa7sulmsyqfP4zAEKOJQUhWc9YTZc/view?usp=drivesdk";
+      "https://drive.google.com/file/d/1x8eRrCBjXOPhyAV5SCkqDzvldaILOb3P/view?usp=drive_link";
+    // https://drive.google.com/file/d/1x8eRrCBjXOPhyAV5SCkqDzvldaILOb3P/view?usp=sharing
+    // https://drive.google.com/file/d/1x8eRrCBjXOPhyAV5SCkqDzvldaILOb3P/view?usp=drive_link
 
     const link = document.createElement("a");
     link.href = resumeUrl;
     link.target = "_blank";
     link.download =
-      "file/d/1grlRa7sulmsyqfP4zAEKOJQUhWc9YTZc/view?usp=drivesdk";
+      "file/d/1x8eRrCBjXOPhyAV5SCkqDzvldaILOb3P/view?usp=drive_link";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
